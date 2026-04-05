@@ -7,22 +7,40 @@
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Document</title>
+    <style>
+    @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+    .animate-marquee {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 10s linear infinite;
+    }
+</style>
 </head>
 <body>
     <!-- screen one  -->
-<section class=" screen-one h-dvh max-w-[450px] w-full  mx-auto overflow-hidden relative bg-slate-400 ">
-<header class="absolute top-10 left-1/2 -translate-x-1/2 z-10">
-<ul class="flex gap-5 text-gray-500 items-center ">
-    <li>Following</li>
-    <li>For You</li>
-</ul>
-</header>
+<section class=" screen-one h-dvh max-w-[450px] w-full  mx-auto overflow-hidden relative bg-black  capitalize">
+<div class="absolute h-32 top-0 left-0 w-full bg-gradient-to-b from-black/50 to-transparent z-10 pointer-events-none">
+    <header>
+        <ul class="absolute z-10 top-12 left-1/2 -translate-x-1/2  flex gap-6 text-white pointer-events-auto">
+            <li id="follower-tap-btn">following
+
+            </li>
+            <li id="foryou-btn">for you</li>
 
 
+        </ul>
+    </header>
+
+
+
+</div>
 
 <main class="absolute inset-0 bg-black">
-<video src="/images/sheikh mustada/Download (1).mp4" 
-           class="h-full w-full object-cover cursor-pointer" 
+<video src="/images/sheikh mustada/Download (3).mp4" 
+           class="h-full  w-full object-cover cursor-pointer" 
            autoplay 
            loop 
            muted 
@@ -57,7 +75,9 @@
     </ul>
     
 </aside>
+<div class="absolute w-16 h-56 bg-gradient-to-t from-black/20 to-transparent pointer-events-none left-0 bottom-0 "> </div>
 <footer class="text-white absolute bottom-16 left-3">
+    
 <h2 class="">
     @sheikh_mustafa
 </h2>
@@ -65,11 +85,14 @@
     <span id="ciwanka-vedioga">The most satisfying Job</span> #fyp #satisfying <br>
      #roadmarking
 </p>
-<div>
+<div class="flex items-center gap-2">
    <img src="/images/Music Icon.png" alt="" class="size-5">
-   <p>
-
-   </p>
+   <div class="overflow-hidden relative">
+       <p class="animate-marquee text-sm text-white">
+           codka-sheikh-mustafa sheikh haji ismail — codka-sheikh-mustafa sheikh haji ismail
+       </p>
+   </div>
+   
 
 </div>
 
